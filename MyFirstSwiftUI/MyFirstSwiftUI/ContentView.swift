@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+   @State var isEnglish : Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack{
+            Text(isEnglish ? "Hello World" : "Salam Dunya")
+            Button(action:{
+                self.isEnglish.toggle()
+            }, label: {
+                Text("Salam")
+            })
         }
-        .padding()
+        .font(.title)
+        
     }
 }
 
