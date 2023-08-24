@@ -1,0 +1,27 @@
+/* No comment provided by engineer. */
+"CONVERSION_DEGREES_CELCIUS" = "dərəcə";
+
+/* No comment provided by engineer. */
+"CONVERSION_FAHREINHEIT" = "faranheyt";
+
+/* No comment provided by engineer. */
+"CONVERSION_IS_ACTUALLY" = "əslində";
+
+/* No comment provided by engineer. */
+"CONVERSION_TEXT_FIELD_PLACEHOLDER" = "dəyər";
+
+/* No comment provided by engineer. */
+"MAP_CITY_ISTANBUL" = "İstanbul";
+
+/* No comment provided by engineer. */
+"MAP_CITY_LONDON" = "London";
+
+/* Localizable.strings
+  WorldRouter
+
+  Created by Yusif Ahmadov on 24.08.23. */
+"TAB_CONVERSION" = "Çevirici";
+
+/* No comment provided by engineer. */
+"TAB_MAP" = "Xəritə";
+
