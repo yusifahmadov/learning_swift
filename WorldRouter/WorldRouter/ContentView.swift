@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @State var fahrenheitValue : String = ""
     
+    @State var isVisible = false
+    
     let numberFormatter : NumberFormatter = {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
@@ -37,17 +39,24 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            TextField("value",text: $fahrenheitValue).font(Font.system(size: 64)).multilineTextAlignment(.center).keyboardType(.decimalPad)
+            TextField("CONVERSION_TEXT_FIELD_PLACEHOLDER",text: $fahrenheitValue).font(Font.system(size: 64)).multilineTextAlignment(.center).keyboardType(.decimalPad)
             
-            Text("fahrenheit")
-            Text("is actually").foregroundColor(.teal)
+            Text("CONVERSION_FAHREINHEIT")
+            Text("CONVERSION_IS_ACTUALLY").foregroundColor(.teal)
             Text(convertToCelcius()).font(Font.system(size: 64))
-            Text("degrees Celcius")
+            Text("CONVERSION_DEGREES_CELCIUS")
             Spacer()
         }
         .padding()
         .font(.title)
         .foregroundColor(.blue)
+        
+        .opacity(isVisible ? 1.0 : 0.0)
+        .offset(x: isVisible ? 0 : 100, y: isVisible ? 0 : 20)
+        .animation(.easeIn(duration: 1))
+        .onAppear{
+            self.isVisible = true
+        }
     }
 }
 

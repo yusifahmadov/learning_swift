@@ -1,7 +1,27 @@
-/* 
-  Localizable.strings
+/* No comment provided by engineer. */
+"CONVERSION_DEGREES_CELCIUS" = "degrees Celcius";
+
+/* No comment provided by engineer. */
+"CONVERSION_FAHREINHEIT" = "fahrenheit";
+
+/* No comment provided by engineer. */
+"CONVERSION_IS_ACTUALLY" = "is actually";
+
+/* No comment provided by engineer. */
+"CONVERSION_TEXT_FIELD_PLACEHOLDER" = "value";
+
+/* No comment provided by engineer. */
+"MAP_CITY_ISTANBUL" = "Istanbul";
+
+/* No comment provided by engineer. */
+"MAP_CITY_LONDON" = "London";
+
+/* Localizable.strings
   WorldRouter
 
-  Created by Yusif Ahmadov on 24.08.23.
-  
-*/
+  Created by Yusif Ahmadov on 24.08.23. */
+"TAB_CONVERSION" = "Conversion";
+
+/* No comment provided by engineer. */
+"TAB_MAP" = "Map";
+

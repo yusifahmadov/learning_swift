@@ -14,6 +14,9 @@
 		F526E94D2A93486200AA4116 /* WorldRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F526E94C2A93486200AA4116 /* WorldRouterTests.swift */; };
 		F526E9572A93486200AA4116 /* WorldRouterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F526E9562A93486200AA4116 /* WorldRouterUITests.swift */; };
 		F526E9592A93486200AA4116 /* WorldRouterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F526E9582A93486200AA4116 /* WorldRouterUITestsLaunchTests.swift */; };
+		F564FB532A9726C6002A08E9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F564FB522A9726C6002A08E9 /* MapView.swift */; };
+		F564FB562A972DAE002A08E9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F564FB582A972DAE002A08E9 /* Localizable.strings */; };
+		F564FB5C2A97334D002A08E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F564FB5E2A97334D002A08E9 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,12 @@
 		F526E9522A93486200AA4116 /* WorldRouterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldRouterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F526E9562A93486200AA4116 /* WorldRouterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldRouterUITests.swift; sourceTree = "<group>"; };
 		F526E9582A93486200AA4116 /* WorldRouterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldRouterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F564FB522A9726C6002A08E9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F564FB572A972DAE002A08E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F564FB592A9731D3002A08E9 /* az-AZ */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "az-AZ"; path = "az-AZ.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F564FB5D2A97334D002A08E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F564FB5F2A97334E002A08E9 /* az-AZ */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "az-AZ"; path = "az-AZ.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		F564FB602A973438002A08E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,7 @@
 		F526E92F2A93486000AA4116 = {
 			isa = PBXGroup;
 			children = (
+				F564FB582A972DAE002A08E9 /* Localizable.strings */,
 				F526E93A2A93486000AA4116 /* WorldRouter */,
 				F526E94B2A93486200AA4116 /* WorldRouterTests */,
 				F526E9552A93486200AA4116 /* WorldRouterUITests */,
@@ -94,8 +104,10 @@
 		F526E93A2A93486000AA4116 /* WorldRouter */ = {
 			isa = PBXGroup;
 			children = (
+				F564FB602A973438002A08E9 /* Info.plist */,
 				F526E93B2A93486000AA4116 /* WorldRouterApp.swift */,
 				F526E93D2A93486000AA4116 /* ContentView.swift */,
+				F564FB522A9726C6002A08E9 /* MapView.swift */,
 				F526E93F2A93486100AA4116 /* Assets.xcassets */,
 				F526E9412A93486100AA4116 /* Preview Content */,
 			);
@@ -106,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				F526E9422A93486100AA4116 /* Preview Assets.xcassets */,
+				F564FB5E2A97334D002A08E9 /* InfoPlist.strings */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -213,6 +226,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"az-AZ",
 			);
 			mainGroup = F526E92F2A93486000AA4116;
 			productRefGroup = F526E9392A93486000AA4116 /* Products */;
@@ -232,6 +246,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F526E9432A93486100AA4116 /* Preview Assets.xcassets in Resources */,
+				F564FB5C2A97334D002A08E9 /* InfoPlist.strings in Resources */,
+				F564FB562A972DAE002A08E9 /* Localizable.strings in Resources */,
 				F526E9402A93486100AA4116 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +275,7 @@
 			files = (
 				F526E93E2A93486000AA4116 /* ContentView.swift in Sources */,
 				F526E93C2A93486000AA4116 /* WorldRouterApp.swift in Sources */,
+				F564FB532A9726C6002A08E9 /* MapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +310,27 @@
 			targetProxy = F526E9532A93486200AA4116 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F564FB582A972DAE002A08E9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F564FB572A972DAE002A08E9 /* en */,
+				F564FB592A9731D3002A08E9 /* az-AZ */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F564FB5E2A97334D002A08E9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F564FB5D2A97334D002A08E9 /* en */,
+				F564FB5F2A97334E002A08E9 /* az-AZ */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F526E95A2A93486200AA4116 /* Debug */ = {
@@ -420,6 +458,7 @@
 				DEVELOPMENT_TEAM = 3Z4Q68KZ3H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WorldRouter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +488,7 @@
 				DEVELOPMENT_TEAM = 3Z4Q68KZ3H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WorldRouter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
